@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const SeveralCounters = () => {
     const initialCounters = [
@@ -10,11 +10,7 @@ const SeveralCounters = () => {
     const [counters, setCounters] = useState(initialCounters)
     return (
         <div>
-            {counters.map((el) => (
-                <div
-            ))}
-            <button onClick={() => minus(id)}>+</button>
-            <button onClick={() => minus(id)}>+</button>
+
 
 
         </div>

@@ -10,10 +10,19 @@ const Counter = () => {
         setCounter(counter + 1);
     }
     return (
-        <div>
-            <button onClick={minus}> - </button>
-            {counter}
-            <button onClick={plus}> + </button>
+        <div className="App mx-5">
+            <h2 > Counter </h2>
+
+            <p><span style={{color: 'red', fontSize: '42px', fontWeight: 'bold'}}>{counter}</span></p>
+
+            <button type="button" class="btn btn-secondary mx-1" onClick={minus}><b> - </b></button>
+            <button type="button" class="btn btn-secondary mx-1" onClick={plus}> + </button>
+
+            <button type="button" class="btn btn-secondary mx-1" onClick={()=> setCounter(0)}> reset </button>
+
+
+
+
         </div>
     );
 };
